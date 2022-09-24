@@ -1,0 +1,6 @@
+.container-right{
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    width: 40%;
+}

@@ -1,0 +1,9 @@
+.canetinhas{
+    height: 360px;
+    object-fit: cover;
+}
+
+.detalhe{
+    position: absolute;
+    bottom: 15px;
+}

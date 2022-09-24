@@ -1,0 +1,16 @@
+.menuLink, .toglleBtn {
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    text-decoration: none;
+    width: 60px;
+    background-color: blueviolet;
+}
+
+.menuLink span {
+    position: absolute;
+    transform: rotate(calc(var(--i)* (360deg/8)) translateY(180px));
+}

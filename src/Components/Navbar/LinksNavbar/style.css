@@ -1,0 +1,19 @@
+/* @import url("../../root.css"); */ 
+
+.linkNavbar{
+  color: #000;
+  font-family: "JetBrains Mono", monospace;
+  text-decoration: none; 
+  transition: ease 0.4s; 
+}
+
+.linkNavbar:hover {
+  background-color: rgba(85, 214, 194, 0.4);
+  border-radius: 6px;
+  box-shadow: 3px 4px 3px rgba(62, 66, 66, 0.22);
+  padding: 0.5rem;
+} 
+
+.link-teste {
+  box-shadow: 3px 4px 3px rgba(62, 66, 66, 0.22);
+}

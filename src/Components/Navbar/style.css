@@ -1,0 +1,10 @@
+.navbar,
+.nav-menu {
+  align-items: center;
+  display: flex;
+  height: 60px;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 1rem;
+  width: 60vw;
+}
