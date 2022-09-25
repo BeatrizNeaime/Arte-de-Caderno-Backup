@@ -1,0 +1,15 @@
+@import url(../../../../root.css);
+
+.dados {
+    bottom: 0px;
+    font-family: var(--fonte);
+    position: absolute;
+    text-align: right;
+    width: 75%;
+    z-index: 1000;
+}
+
+.txtDados {
+    font-weight: 700;
+    margin: 0;
+}

@@ -5,5 +5,6 @@
 
 .detalhe{
     position: absolute;
-    bottom: 15px;
+    bottom: -10px;
+    z-index: 1000;
 }

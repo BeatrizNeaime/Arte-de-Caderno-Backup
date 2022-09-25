@@ -1,0 +1,11 @@
+.imgBackground{
+    align-items: center;
+    display: flex;
+    height: 90%;
+    justify-content: center;
+}
+
+.imgBackground img{
+    object-fit: cover;
+    height: 100%;
+}
