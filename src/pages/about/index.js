@@ -1,0 +1,40 @@
+import "./style.css";
+import Navbar from "../../Components/Navbar";
+import Titulo from '../../Components/Title';
+
+const About = () => {
+
+    var logo = require('../../assets/img/if.png')
+
+    return (
+
+        <div >
+            <Navbar />
+            <Titulo title="Sobre o Projeto" />
+
+            <div className="imagem">
+                <div className="foto">
+                    <div className="foto2"></div>
+                    <img src={logo} alt="Logo do IF" />
+                </div>
+            </div>
+            <div className="texto">
+                <h3>
+                    Sed aliquet convallis finibus.
+                    Morbi viverra laoreet commodo.
+                    Phasellus lobortis facilisis magna.
+                    Integer lorem ex, fringilla
+                    sit amet convallis vel, bibendum sit
+                    amet eros. Cras sollicitudin leo
+                    ut volutpat eleifend. Suspendisse
+                    non posuere lectus. Interdum et
+                    malesuada fames ac ante ipsum primis.
+                </h3>
+            </div>
+
+
+        </div>
+    );
+};
+
+export default About;
