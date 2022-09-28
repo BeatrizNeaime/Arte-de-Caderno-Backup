@@ -1,0 +1,22 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-right-color: var(--green-color);
+    color: white;
+    width: 7rem;
+    margin-left: 2.4rem;
+}
+
+.sidebar a{
+    font-family: var(--font);
+    text-decoration: none;
+    padding: .7rem;
+    text-align: center;
+    color: black;
+}
+
+.sidebar a:hover{
+    background-color: var(--green-color);
+    color: white;
+}

@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Magic Retro';
+  src: local('Magic Retro'), url(./assets/fonts/Magic\ Retro.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Berkshire';
+  src: local('Berkshire'), url(./assets/fonts/Berkshire_Swash/BerkshireSwash-Regular.ttf);
+}
+
+:root{
+  --pink-color: #F49097;
+  --purple-color: #DFB2F4;
+  --yellow-color: #F5E960;
+  --green-color: #55D6C2;
+
+  --font: "JetBrains Mono", monospace;
+  --font-title: "Magic Retro";
+  --font-secundary: "Berkshire";
+}
