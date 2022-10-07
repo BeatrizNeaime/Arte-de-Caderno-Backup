@@ -7,11 +7,6 @@ function Sidebar() {
             <a href="">2021</a>
             <a href="">2020</a>
             <a href="">2019</a>
-            <a></a>
-            <a></a>
-            <a></a>
-            <a></a>
-            <a></a>
         </div>
     )
 };
