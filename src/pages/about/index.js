@@ -4,7 +4,7 @@ import Titulo from '../../Components/Title';
 
 const About = () => {
 
-    var logo = require('../../assets/img/if.png')
+    var logo = require('../../assets/img/if logo.png')
 
     return (
 
@@ -13,10 +13,7 @@ const About = () => {
             <Titulo title="Sobre o Projeto" />
 
             <div className="imagem">
-                <div className="foto">
-                    <div className="foto2"></div>
-                    <img src={logo} alt="Logo do IF" />
-                </div>
+                <img src={logo} alt="Logo do IF" />
             </div>
             <div className="texto">
                 <h3>

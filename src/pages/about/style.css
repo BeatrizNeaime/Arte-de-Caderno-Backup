@@ -6,35 +6,21 @@
     top: 398px;
 }
 
-.foto {
-    box-sizing: border-box;
-    height: auto;
-    border: 1px solid #000000;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
-}
-
-.foto2 {
-    width: 219px;
-    height: 51px;
-    left: 292.2px;
-    top: 398px;
-    
-    background: #DFB2F4;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    transform: rotate(4.27deg);
-}
-
 .texto {
     position: absolute;
-    width: 777px;
-    height: 414px;
-    left: 812px;
-    top: 390px;
+    width: 50rem;
+    height: 40rem;
+    left: 50rem;
+    top: 25rem;
 
-    font-family: "JetBrains Mono", monospace;
-    font-size: 28px;
-
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 46px;
     text-align: right;
 
     color: #000000;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
