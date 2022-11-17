@@ -1,0 +1,33 @@
+@import url('../../../root.css');
+
+.dion{
+    width: 100% !important;
+}
+
+.legiao{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.minhaDiv{
+    width: 40%;
+}
+
+.nav-link{
+    font-family: var(--fonte);
+}
+
+.nav-link:hover{
+    background-color: rgba(85, 214, 194, 0.7);
+    box-shadow: 3px 5px 8px 1.5px rgba(62,66,66,0.09);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 800ms;
+}
+
+@media screen and (max-width: 991px) {
+    .minhaDiv{
+        width: 100%;
+    }
+}
