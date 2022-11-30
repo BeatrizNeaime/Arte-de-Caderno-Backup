@@ -10,8 +10,8 @@ var logo = require('../../../assets/img/logoG.png')
   return (
     <Navbar collapseOnSelect expand="lg" bg="light" variant="light" className="dion">
       <Container className='leoni'>
-        <Navbar.Brand href="#home">
-            <img src={logo} width={100} height={50} alt="Logo do projeto Arte de Caderno"/>    
+        <Navbar.Brand href="#home" className="logoNav">
+            <img src={logo} width={100} height={50} alt="Logo do projeto Arte de Caderno" className="logo"/>    
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
         <div className="minhaDiv">

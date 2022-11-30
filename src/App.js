@@ -1,10 +1,11 @@
 import './App.css';
-import NavBoot from './Components/Navbar/NavBoot'
+import Corpo from './Components/Corpo/Main/index.js'
+
 
 function App() {
   return (
     <div className="App">
-      <NavBoot/>
+      <Corpo/>
     </div>
   );
 }

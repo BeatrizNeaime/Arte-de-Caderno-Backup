@@ -1,5 +1,14 @@
 .container-left{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
     height: 100%;
     margin: 0;
-    width: 80%;
+    width: 60%;
+}
+
+@media screen and (max-width: 768px){
+    .container-left{
+        width: 90%;
+    }
 }
