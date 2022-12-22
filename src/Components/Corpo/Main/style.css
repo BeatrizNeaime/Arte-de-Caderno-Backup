@@ -1,7 +1,17 @@
 .main {
     align-items: center;
     display: flex;
-    height: 80vh;
+    height: 91vh;
     justify-content: space-evenly;
     width: 100%;
-} 
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 150vh;
+        justify-content: space-evenly;
+    }
+}

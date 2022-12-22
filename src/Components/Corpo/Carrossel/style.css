@@ -1,0 +1,23 @@
+.Carrossel{
+    width: 100%;
+}
+
+@media screen and (max-width: 505px) {
+    p, h3 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 470px) {
+    p, h3 {
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .Carrossel{
+        z-index: -10000;
+    }
+}

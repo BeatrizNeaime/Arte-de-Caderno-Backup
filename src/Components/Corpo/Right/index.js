@@ -1,10 +1,10 @@
 import './style.css'
-import MenuCircular from '../../Corpo/MenuCircular'
  
 const Right = () => {
+    var fundo = require("../../../assets/img/Aviso.png")
     return (
         <div className="container-right">
-            <MenuCircular/>
+            
         </div>
     )
 }

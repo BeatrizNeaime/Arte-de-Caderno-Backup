@@ -23,7 +23,15 @@
     box-shadow: 3px 5px 8px 1.5px rgba(62,66,66,0.09);
     border-radius: 8px;
     cursor: pointer;
-    transition: 800ms;
+    transition: 700ms;
+}
+
+@media screen and (max-width: 800px){
+    .legiao{
+        background-color: rgba(248, 249, 250, 0.9);
+        margin-top: 0;
+        z-index: 1000000;
+    }
 }
 
 @media screen and (max-width: 991px) {
