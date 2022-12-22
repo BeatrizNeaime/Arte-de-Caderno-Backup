@@ -1,15 +1,10 @@
 import "./style.css";
-import Navbar from "../../Components/Navbar";
 import Titulo from '../../Components/Title';
 
 const About = () => {
-
     var logo = require('../../assets/img/if logo.png')
-
     return (
-
         <div >
-            <Navbar />
             <Titulo title="Sobre o Projeto" />
 
             <div className="imagem">

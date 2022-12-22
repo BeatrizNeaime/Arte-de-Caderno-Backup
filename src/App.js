@@ -1,13 +1,23 @@
 import './App.css';
-import Corpo from './Components/Corpo/Main/index.js'
-
+import About from './pages/about'
+import {BrowserRouter as Router, Route, Link, Routes} from 'react-router-dom';
+import Gallery from './Galery'
+import Main from './Components/Corpo/Main';
+import NavBoot from './Components/Navbar/NavBoot'
 
 function App() {
   return (
     <div className="App">
-      <Corpo/>
+      <Router>
+        <NavBoot/>
+        <Routes>
+          <Route path="/sobre" element={<About/>} />
+          <Route path="/" element={<Main/>} />
+          <Route path="/galeria" element={<Gallery/>} />
+        </Routes>
+      </Router>
     </div>
-  );
+  );  
 }
 
 export default App;

@@ -7,7 +7,6 @@ import "./Galery.css";
 function Galery() {
   return (
     <div className="galery">
-      <Navbar />
       <PageTitle 
         title = 'galeria'
       />

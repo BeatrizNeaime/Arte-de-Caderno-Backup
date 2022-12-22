@@ -6,7 +6,6 @@ import './style.css'
 const Corpo = () =>{
     return(
         <>
-            <NavBoot/>
             <div className="main">
                 <Left/>
                 <Right/>
