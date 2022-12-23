@@ -27,9 +27,6 @@ var logo = require('../../../assets/img/logoG.png')
       </Container>
     </Navbar>
   );
-
-  
-
 }
 
 export default NavBoot;
