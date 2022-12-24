@@ -1,17 +1,44 @@
-.texto {
-    color: #1f1e1e;
-    font-family: 'JetBrains Mono';
-    text-align: justify;
+.about-dir{
+    padding: 15px;
+    width: 55% !important;
+}
+
+.about-esq{
+    width: 40% !important;
 }
 
 .content{
     align-items: center;
     display: flex;
+    gap: 2%;
     justify-content: space-evenly;
+    padding: 15px;
 }
 
-@media screen and (max-width:1023px) {
-    .imagem{
+.texto{
+    text-align: justify;
+}
+
+
+@media screen and (min-width: 300px) and ( max-width: 1023px ) {
+
+    .content{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100vh;
+    }
+
+    .about-dir{
+        width: 100% !important;
+    }
+    
+    .about-esq{
         display: none;
+    }
+
+    .texto{
+        width: 100%;
     }
 }

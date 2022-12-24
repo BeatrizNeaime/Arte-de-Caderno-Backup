@@ -21,6 +21,7 @@ var logo = require('../../../assets/img/logoG.png')
             <Nav.Link><Link className="nav-link" to="/" >Início</Link></Nav.Link>
             <Nav.Link><Link to="/galeria" className="nav-link" >Galeria</Link></Nav.Link> 
             <Nav.Link><Link to="/sobre" className="nav-link" >Sobre</Link></Nav.Link>
+            <Nav.Link><Link to="/login" className="nav-link" >Login </Link></Nav.Link>
           </Nav>
         </Navbar.Collapse>
         </div>
