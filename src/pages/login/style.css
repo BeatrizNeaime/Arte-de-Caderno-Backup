@@ -1,5 +1,14 @@
 @import url('../../root.css');
 
+.login-btn{
+    background-color: var(--azul);
+    border: none;
+}
+
+.login-btn:hover{
+    background-color: var(--amarelo);
+}
+
 .login-content{
     align-items: center;
     display: flex;
@@ -31,6 +40,12 @@
     width: 90%;
 }
 
+.login-link{
+    font-size: 12px;
+    margin-top: 1rem;
+    text-align: center;
+}
+
 .logo{
     height: 60px;
     object-fit: cover;
@@ -38,4 +53,14 @@
 
 .mb-3{
     text-align: left;
+}
+
+@media screen and (max-width: 1023px) {
+    .login-container{
+        width: 90%;
+    }
+
+    .login-forms{
+        width: 100%;
+    }
 }

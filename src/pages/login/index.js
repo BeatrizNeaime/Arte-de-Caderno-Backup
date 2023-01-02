@@ -1,6 +1,9 @@
 import './style.css'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { AiOutlineLogin } from "react-icons/ai";
+import {Link} from 'react-router-dom';
+
 const Login = () =>{
 
     const logo = require('../../assets/img/logoG.png')
@@ -23,8 +26,11 @@ const Login = () =>{
                             <Form.Control type="password" placeholder="senha" required name="senha" />
                         </Form.Group>
                         <Button type="submit" className="login-btn" >
-                            Entrar
+                            Entrar <AiOutlineLogin/>
                         </Button>
+                        <div className="login-link">
+                            <span>Ainda não tem uma conta? <Link to="/cadastro">Cadastre-se</Link></span>
+                        </div>
                     </Form>
                 </div>
             </div>
