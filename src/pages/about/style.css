@@ -1,26 +1,44 @@
-.imagem {
-    position: absolute;
-    width: 467px;
-    height: 477.08px;
-    left: 166px;
-    top: 398px;
+.about-dir{
+    padding: 15px;
+    width: 55% !important;
 }
 
-.texto {
-    position: absolute;
-    width: 50rem;
-    height: 40rem;
-    left: 50rem;
-    top: 25rem;
+.about-esq{
+    width: 40% !important;
+}
 
-    font-family: 'JetBrains Mono';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 35px;
-    line-height: 46px;
-    text-align: right;
+.content{
+    align-items: center;
+    display: flex;
+    gap: 2%;
+    justify-content: space-evenly;
+    padding: 15px;
+}
 
-    color: #000000;
+.texto{
+    text-align: justify;
+}
 
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+@media screen and (min-width: 300px) and ( max-width: 1023px ) {
+
+    .content{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100vh;
+    }
+
+    .about-dir{
+        width: 100% !important;
+    }
+    
+    .about-esq{
+        display: none;
+    }
+
+    .texto{
+        width: 100%;
+    }
 }

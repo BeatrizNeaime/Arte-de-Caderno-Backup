@@ -1,7 +1,7 @@
 @import url('../../../root.css');
 
 .dion{
-    width: 100% !important;
+    width: 100%;
 }
 
 .legiao{
@@ -34,7 +34,7 @@
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1023px) {
     .minhaDiv{
         width: 100%;
     }

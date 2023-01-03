@@ -1,0 +1,66 @@
+@import url('../../root.css');
+
+.login-btn{
+    background-color: var(--azul);
+    border: none;
+}
+
+.login-btn:hover{
+    background-color: var(--amarelo);
+}
+
+.login-content{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    height: 90vh;
+    width: 100%;
+}
+
+.login-container{
+    align-items: center;
+    background-color: #f0f2f5;
+    border-radius: 6px;
+    box-shadow: 10px 10px 29px 0px rgba(210,211,214,1);
+    display: flex;
+    flex-direction: column;
+    height: 55%;
+    justify-content: space-evenly;
+    padding: 20px;
+    width: 50%;
+}
+
+.login-forms{
+    margin: 1rem 0;
+    width: 80%;
+}
+
+.login-keep{
+    margin-bottom: 1rem;
+    width: 90%;
+}
+
+.login-link{
+    font-size: 12px;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.logo{
+    height: 60px;
+    object-fit: cover;
+}
+
+.mb-3{
+    text-align: left;
+}
+
+@media screen and (max-width: 1023px) {
+    .login-container{
+        width: 90%;
+    }
+
+    .login-forms{
+        width: 100%;
+    }
+}

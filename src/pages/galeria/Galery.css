@@ -1,0 +1,45 @@
+.body-galery {
+    margin-top: 20px;
+    display: flex;
+}
+
+.dir{
+    width: 85%;
+}
+
+.draws {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.esq{
+    width: 15%;
+}
+
+.galery{
+    width: 100vw;
+}
+
+@media screen and (max-width:1023px) {
+    .body-galery{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-bottom: 2rem;
+    }
+
+    .dir{
+        margin-top: 1rem;
+        width: 100%;
+    }
+    
+    .draws{
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 0 1rem  ;
+    }
+}

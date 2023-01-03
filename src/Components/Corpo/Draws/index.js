@@ -7,7 +7,7 @@ function Draws() {
     return (
         <div>
             <div class="gallery">
-                <a target="_blank" href="">
+                <a target="_blank" href="/">
                     <img src={logo} alt="Forest" width="600" height="400"></img>
                 </a>
             </div>
