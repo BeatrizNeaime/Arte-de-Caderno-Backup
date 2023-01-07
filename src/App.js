@@ -6,6 +6,9 @@ import Main from './Components/Corpo/Main';
 import NavBoot from './Components/Navbar/NavBoot'
 import Login from './pages/login'
 import Cadastro from './pages/cadastro'
+import React from 'react';
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -20,6 +23,18 @@ function App() {
           <Route path='/cadastro' element={<Cadastro/>} />
         </Routes>
       </Router>
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </div>
   );  
 }
