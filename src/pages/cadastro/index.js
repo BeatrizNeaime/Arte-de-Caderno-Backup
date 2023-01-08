@@ -1,17 +1,29 @@
 import './style.css'
 import React, { useState } from 'react';
+
+/*--- ReactBoostrap ---*/
 import Form from 'react-bootstrap/Form';
+import Alert from 'react-bootstrap/Alert';
+
+/*--- Components  ---*/
 import Title from '../../Components/Title'
 import Subtitle from './subtitle'
+
+/*--- Material UI ---*/
 import { TextField } from '@mui/material';
 import {Container} from '@mui/material';
-import { maskcpf } from './mascara-cpf';
-import { maskbday } from './mascara-data';
-import {maskcep} from './mascara-cep';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+
+/*---Máscaras para CPF, CEP e Celular */
+import { maskcpf } from './mascara-cpf';
+import { maskbday } from './mascara-data';
+import {maskcep} from './mascara-cep';
+import { maskcel } from './mascara-celular';
+
+/*--- React Toastify ---*/
 import {toast} from 'react-toastify';
 
 const Cadastro = () =>{
@@ -26,16 +38,29 @@ const Cadastro = () =>{
     const [bairro, setBairro] = useState('');
     const [cidade, setcidade] = useState('');
     const [uf, setuf] = useState('');
-
+    const [cel, setCel] = useState('');
+    const [inep, setInep] = useState('');
+    const [escola, setEscola] = useState('');
+    let rec
     /* --- HANDLECHANGE --- */
     const handlechangeBday = (e) =>{
         const {value} = e.target
         setBday(maskbday(value))
     } 
 
+    const handlechangeCel = (e) =>{
+        const {value} = e.target
+        setCel(maskcel(value))
+    }
+
     const handlechangeCep = (e) =>{
         const {value} = e.target
         setCep(maskcep(value))
+    }
+
+    const handlechangeCor = (e) =>{
+        const {value} = e.target
+        setcor(value)
     }
 
     const handlechangeCpf = (e) =>{
@@ -48,12 +73,29 @@ const Cadastro = () =>{
         setGenero(value)
     }
 
-    const handlechangeCor = (e) =>{
+    const handlechangeInep = (e) =>{
         const {value} = e.target
-        setcor(value)
-    }
+        setInep(value.substring(0, 8))
+    }  
 
     /* --- FUNÇÕES AUXILIARES --- */
+
+    async function busca(cep){
+        const url = `http://educacao.dadosabertosbr.com/api/escola/26124297`
+    
+        const options = {
+            method: 'GET'
+        } 
+        try {
+            const b = await fetch(url, options)
+            const c = await b.json()
+            
+            return c
+        } catch (error) {
+            console.log(`----> ${error}`)
+        }
+    }
+
     async function viacep(e){
         const notify = () =>{
             toast.warn('CEP incorreto!', {
@@ -157,7 +199,17 @@ const Cadastro = () =>{
                         </div>
                         <div className='linha'>
                             <TextField id="outlined-basic" label="Estado" variant="outlined" required className='input' value={uf} disabled = {ativo} />
-
+                            <TextField id="outlined-basic" label="Celular" variant="outlined" required className='input' value={cel} onChange={handlechangeCel}/>
+                            <TextField id="outlined-basic" label="E-mail" variant="outlined" required type="email" className='input'/>
+                        </div>
+                        <hr></hr>
+                        <Subtitle sub="Dados Escolares"/>
+                        <Alert variant="primary">
+                            Para melhor identificação a sua instituição de ensino, utilizamos o código fornecido pelo INEP. Consulte o código da sua escola <a href='https://inepdata.inep.gov.br/analytics/saw.dll?dashboard' target="_blank" rel="noreferrer" >clicando aqui</a>. 
+                        </Alert>
+                        <div className='linha'>
+                            <TextField id="outlined-basic" label="Código INEP" variant="outlined" required className='input' value={inep} onChange={handlechangeInep} onBlur={busca} />
+                            <TextField id="outlined-basic" label="Instituição de Ensino" variant="outlined" required className='input' value={escola} />
                         </div>
                     </Form>
                 </div>
